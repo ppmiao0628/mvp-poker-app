@@ -51,7 +51,7 @@ const PokerList: React.FC = () => {
 
   return (
     <div className="poker-list-container">
-      <Title level={2} className="page-title">扑克牌列表</Title>
+      {/* <Title level={2} className="page-title">扑克牌列表</Title> */}
       
       {loading ? (
         <div className="loading-container">

@@ -18,6 +18,7 @@ function App() {
         <div className="App">
           <Routes>
             <Route path="/" element={<PokerList />} />
+            <Route path="/index.html" element={<PokerList />} />
             <Route path="/detail/:id" element={<PokerDetail />} />
           </Routes>
         </div>

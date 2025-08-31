@@ -47,14 +47,14 @@ const PokerDetail: React.FC = () => {
 
   return (
     <div className="detail-container">
-      <Button 
+      {/* <Button
         type="text" 
         icon={<ArrowLeftOutlined />}
         onClick={() => navigate(-1)}
         className="back-button"
       >
         返回列表
-      </Button>
+      </Button> */}
 
       {loading ? (
         <div className="loading-container">
