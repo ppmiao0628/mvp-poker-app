@@ -14,7 +14,7 @@ function App() {
         algorithm: theme.defaultAlgorithm,
       }}
     >
-      <Router>
+      <Router basename="/best-poker">
         <div className="App">
           <Routes>
             <Route path="/" element={<PokerList />} />
