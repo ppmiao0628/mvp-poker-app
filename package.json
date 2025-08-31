@@ -24,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "to-server": "react-scripts build && scp -r /Users/ppmiao/ppm/project/mvp-poker-app/build/* root@119.45.162.5:/usr/local/nginx/html/poker-cms-ui",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
