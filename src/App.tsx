@@ -1,0 +1,29 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PokerList from './pages/PokerList';
+import PokerDetail from './pages/PokerDetail';
+import { ConfigProvider, theme } from 'antd';
+import zhCN from 'antd/locale/zh_CN';
+import './App.css';
+
+function App() {
+  return (
+    <ConfigProvider
+      locale={zhCN}
+      theme={{
+        algorithm: theme.defaultAlgorithm,
+      }}
+    >
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<PokerList />} />
+            <Route path="/detail/:id" element={<PokerDetail />} />
+          </Routes>
+        </div>
+      </Router>
+    </ConfigProvider>
+  );
+}
+
+export default App;

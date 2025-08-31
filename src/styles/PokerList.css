@@ -1,0 +1,74 @@
+.poker-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.poker-list {
+  margin-bottom: 20px;
+}
+
+.list-item {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.poker-card {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.poker-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.poker-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.poker-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.poker-time {
+  color: #999;
+  font-size: 14px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .poker-list-container {
+    padding: 10px;
+  }
+  
+  .poker-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .poker-time {
+    margin-top: 8px;
+  }
+}
